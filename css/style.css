@@ -118,12 +118,12 @@ h6 {
 }
 
 .bg-primary {
-  background: var(--primary-color);
+  background: var(--primary-color) !important;
   color: #fff;
 }
 
 .bg-secondary {
-  background: var(--secondary-color);
+  background: var(--secondary-color) !important;
   color: #fff;
 }
 
@@ -318,5 +318,26 @@ article.bg-primary {
 }
 
 .list li a:hover {
-  color: var(--primary-color) !important;
+  color: var(--primary-color);
+}
+
+/* Inner Page grid container for About */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+}
+.l-heading {
+  font-size: 3rem;
+}
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
 }
